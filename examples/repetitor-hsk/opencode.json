@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "pandawed": {
+      "type": "remote",
+      "url": "https://mcp.pandawed.ru/mcp",
+      "enabled": true
+    }
+  },
+  "agent": {
+    "build": { "disable": true },
+    "plan": { "disable": true },
+    "Репетитор HSK": {
+      "description": "Репетитор китайского: показывает слова наборов HSK и объясняет по статьям Пандаведа",
+      "mode": "primary",
+      "temperature": 0.2,
+      "prompt": "Ты репетитор китайского. Подробная инструкция — в AGENTS.md.",
+      "permission": { "edit": "deny", "bash": { "*": "deny" } }
+    }
+  }
+}
